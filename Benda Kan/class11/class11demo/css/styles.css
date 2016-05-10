@@ -1,0 +1,179 @@
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+body {
+	background-image: url('../images/gstripe.png');
+	background-size: 48px 48px;
+}
+
+
+#page-wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+header {
+	background: #398235; /* Old browsers */
+background: -moz-linear-gradient(top,  #398235 0%, #8ab66b 56%, #c9de96 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#398235), color-stop(56%,#8ab66b), color-stop(100%,#c9de96)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #398235 0%,#8ab66b 56%,#c9de96 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #398235 0%,#8ab66b 56%,#c9de96 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #398235 0%,#8ab66b 56%,#c9de96 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #398235 0%,#8ab66b 56%,#c9de96 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#398235', endColorstr='#c9de96',GradientType=0 ); /* IE6-9 */
+}
+
+#header-container {
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+#header-container h1 {
+	position: absolute;
+	top: 30px;
+	left: 220px;
+	margin: 0;
+	font-family: 'Rock Salt', cursive;
+}
+
+img.logo {
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+div.logo {
+	width: 76px;
+	height: 120px;
+	background-image: url('../images/logo.png');
+	position: absolute;
+	top: 20px;
+	left: 125px;
+}
+
+ul.secondary-nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+ul.secondary-nav li:before {
+	content: "|";
+}
+
+ul.secondary-nav li:first-child:before {
+	content: "";
+}
+
+ul.secondary-nav li {
+	float: left;
+}
+
+ul.secondary-nav li a {
+	margin: 0 10px;
+}
+
+
+
+#main-content {
+	background-color: #EEEEEE;
+	min-height: 400px;
+	overflow: hidden;
+}
+
+footer {
+	background-color: purple;
+	height: 150px;
+}
+
+nav {
+	background-color: #398235;
+}
+
+nav #nav-container {
+	width: 960px;
+	margin: 0 auto;
+	/*text-align: center;*/
+	overflow: hidden;/**/
+
+}
+
+nav#main-nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	/*display: inline-block;
+	vertical-align: top;*/
+	float: left;/**/
+	position: relative;/**/
+	left: 50%;/**/
+}
+
+nav#main-nav ul li {
+	float: left;
+	position: relative;/**/
+	right: 50%;/**/
+
+}
+
+nav#main-nav ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 12px 15px 10px 15px;
+	display: block;
+}
+
+nav#main-nav ul li a:hover {
+	background-color: #000000;
+}
+
+#content-col {
+	width: 660px;
+	float: left;
+	padding: 20px;
+}
+
+#content-col h1 {
+	font-family: 'Rock Salt', cursive;
+}
+
+#side-col {
+	width: 260px;
+	float: left;
+}
+
+
+
+
+

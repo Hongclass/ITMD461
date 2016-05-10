@@ -1,0 +1,28 @@
+header {
+	background-color: #888;
+	height: 80px;
+}
+
+footer {
+	background-color: #888;
+	height: 80px;
+	clear: both;
+}
+
+#main-content {
+	background-color: red;
+	float: left;
+	width: 700px;
+	height: 500px;
+}
+
+#sidebar {
+	float: left;
+	width: 260px;
+}
+
+#page-wrapper {
+	width: 960px;
+	background-color: blue;
+	margin: 0 auto;
+}

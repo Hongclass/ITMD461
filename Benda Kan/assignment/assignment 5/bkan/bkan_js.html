@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>volunteer form</title>
+	<meta charset="utf-8">
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+	function check(question){  
+
+        for(i=0;i<question.length;i++){    
+            if(question.elements[i].value == ""){
+                alert("Sorry，"+question.elements[i].id + " cannot be empty");
+                document.getElementById(question.elements[i].id).style.borderColor = "red";
+                question.elements[i].focus(); 
+                return false;  
+            }
+        }
+
+		var radio=document.getElementsByName("gender_field");
+		var r=false;
+		for(var i=0;i<radio.length;i++)
+			{
+				if(radio[i].checked==true)
+				{
+				    r=true;
+				    break;
+				}
+			}
+		if(r==false)
+		{
+			document.getElementById("sex").style.backgroundColor = "red";
+			alert("Sorry, gender cannot be empty"); 
+			return false;
+		}
+
+        var checkbox=document.getElementsByName('available_field[]');
+		var isSel=false;
+		for(var i=0;i<checkbox.length;i++)
+		{
+			if(checkbox[i].checked==true)
+			{
+		    isSel=true;
+		    break;
+			}
+		}
+		if(isSel==false)
+		{
+			document.getElementById("days").style.backgroundColor = "red";
+			alert("Please choose available day(s)"); 
+			return false;
+		}    
+
+		var number = "1234567890+-";
+		var  i;
+		var  j; 
+		if(question.phone_field.value.charAt(0)!="+"){
+			alert("Please enter your number like this: +1-312-912-4021");
+			document.getElementById("phone number").style.borderColor = "red";
+			return false;
+		}
+		if(question.phone_field.value.charAt(2)!="-"){
+			alert("Please enter your number like this: +1-312-912-4021");
+			document.getElementById("phone number").style.borderColor = "red";
+			return false;
+		}
+		if(question.phone_field.value.charAt(6)!="-"){
+			alert("Please enter your number like this: +1-312-912-4021");
+			document.getElementById("phone number").style.borderColor = "red";
+			return false;
+		}
+		if(question.phone_field.value.charAt(10)!="-"){
+			alert("Please enter your number like this: +1-312-912-4021");
+			document.getElementById("phone number").style.borderColor = "red";
+			return false;
+		}   
+		for (i=0;i<15;i++)     
+		{     
+			j=number.indexOf(question.phone_field.value.charAt(i));     
+			if (j==-1)     
+			{     
+				alert("Please enter correct number");
+				document.getElementById("phone number").style.borderColor = "red";
+				return false;     
+			}          
+		} 
+		if(question.phone_field.value.charAt(1) == '-'||question.phone_field.value.charAt(1)  == '+'){
+			alert("Please enter your number like this: +1-312-912-4021");
+			document.getElementById("phone number").style.borderColor = "red";
+			return  false;
+			}
+		if(question.phone_field.value.charAt(3) == '-'||question.phone_field.value.charAt(3)  == '+'){
+			alert("Please enter your number like this: +1-312-912-4021");
+			document.getElementById("phone number").style.borderColor = "red";
+			return  false;
+		}
+		if(question.phone_field.value.charAt(4)  == '-'||question.phone_field.value.charAt(4)  == '+'){
+			alert("Please enter your number like this: +1-312-912-4021");
+			document.getElementById("phone number").style.borderColor = "red";
+			return  false;
+		}
+		if(question.phone_field.value.charAt(5)  == '-'||question.phone_field.value.charAt(5)  == '+'){
+			alert("Please enter your number like this: +1-312-912-4021");
+			document.getElementById("phone number").style.borderColor = "red";
+			return  false;
+		}
+		if(question.phone_field.value.charAt(7)  == '-'||question.phone_field.value.charAt(7)  == '+'){
+			alert("Please enter your number like this: +1-312-912-4021");
+			document.getElementById("phone number").style.borderColor = "red";
+			return  false;
+		}
+		if(question.phone_field.value.charAt(8)  == '-'||question.phone_field.value.charAt(8)  == '+'){
+			alert("Please enter your number like this: +1-312-912-4021");
+			document.getElementById("phone number").style.borderColor = "red";
+			return  false;
+		}
+		if(question.phone_field.value.charAt(9)  == '-'||question.phone_field.value.charAt(9)  == '+'){
+			alert("Please enter your number like this: +1-312-912-4021");
+			document.getElementById("phone number").style.borderColor = "red";
+			return  false;
+		}
+		if(question.phone_field.value.charAt(11)  == '-'||question.phone_field.value.charAt(11)  == '+'){
+			alert("Please enter your number like this: +1-312-912-4021");
+			document.getElementById("phone number").style.borderColor = "red";
+			return  false;
+		}
+		if(question.phone_field.value.charAt(12)  == '-'||question.phone_field.value.charAt(12)  == '+'){
+			alert("Please enter your number like this: +1-312-912-4021");
+			document.getElementById("phone number").style.borderColor = "red";
+			return  false;
+		}
+		if(question.phone_field.value.charAt(13)  == '-'||question.phone_field.value.charAt(13)  == '+'){
+			alert("Please enter your number like this: +1-312-912-4021");
+			document.getElementById("phone number").style.borderColor = "red";
+			return  false;
+		}
+		if(question.phone_field.value.charAt(14)  == '-'||question.phone_field.value.charAt(14)  == '+'||question.phone_field.value.charAt(14) ==""){
+			alert("Please enter your number like this: +1-312-912-4021");
+			document.getElementById("phone number").style.borderColor = "red";
+			return  false;
+		}
+
+		var e=question.email_field.value.length;     
+		var temp = question.email_field.value.indexOf('@');     
+		var temp = question.email_field.value.indexOf('.');     
+		if (temp > 1) {     
+			if ((e-temp) > 3){     
+				if ((e-tempd)>0){     
+		return true;     
+				}     
+			}     
+		}
+		alert("Please enter a correct email");
+		return false;
+    }
+
+</script>
+
+	<h2>Volunteer Form</h2>
+	<form name="question" action="http://libertyville.rice.iit.edu/bkan/formscript.php" method="post" onSubmit="return check(question)" >
+		<fieldset>
+			<legend><strong>My Info</strong></legend>
+
+				<p><label>First Name:<input type="text" name="first_name_field" id="first name"></label></p>
+				<p><label>Last Name:<input type="text" name="last_name_field" id="last name"></label></p>
+				<p><label>Phone Number:<input type="tel" name="phone_field" maxlength="15px" id="phone number"></label></p>
+				<p><label>Email Address:<input type="email" name="email_field" id="email"></label></p>
+				<p>
+					<label id="sex">Gender:</label>
+					<label><input type="radio" name="gender_field" value="Male" id="gender">Male</label>
+					<label><input type="radio" name="gender_field" value="Female" id="gender">Female</label>	
+				</p>
+				<p>
+					<label>Age:
+					<select name="age_field">
+						<option>under 18</option>
+						<option>18 - 24</option>
+						<option>25 - 34</option>
+						<option>35 - 44</option>
+						<option>45 - 54</option>
+						<option>55 - 64</option>
+						<option>65 and over</option>
+					</select>
+					</label>
+				</p>
+		</fieldset>
+		<br>
+		<fieldset>
+			<legend><strong>My Availability</strong></legend>
+				<p>
+					<label id="days">Days Available:</label><br>
+					<label><input type="checkbox" name="available_field[]" value="Sunday" id="available">Sunday</label><br>
+					<label><input type="checkbox" name="available_field[]" value="Monday" id="available">Monday</label><br>
+					<label><input type="checkbox" name="available_field[]" value="Tuesday" id="available">Tuesday</label><br>
+					<label><input type="checkbox" name="available_field[]" value="Wednesday" id="available">Wednesday</label><br>
+					<label><input type="checkbox" name="available_field[]" value="Thursday" id="available">Thursday</label><br>
+					<label><input type="checkbox" name="available_field[]" value="Friday" id="available">Friday</label><br>
+					<label><input type="checkbox" name="available_field[]" value="Saturday" id="available">Saturday</label>
+				</p>
+				<p>
+					<label>Any Comments?:<br>
+					<textarea name="comments_field" row="6" cols="50" placeholder="250 words or less" id="comments"></textarea>
+					</label>
+				</p>
+		</fieldset>
+		<input type="submit" value="Send Me">
+		<input type="hidden" name="hidden_field" value="This is the hidden value">
+
+	</form>
+
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>ITMD-461 | Final Project</title>
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.js"></script>
+	<![endif]-->
+	<link href="finalproject/styles/normalize.css" rel="stylesheet" />
+	<link href="finalproject/styles/yourstyles.css" rel="stylesheet" />

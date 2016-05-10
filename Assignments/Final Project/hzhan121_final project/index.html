@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Hong's Bakery House</title>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Serif' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/bxslider.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/bxslider.js"></script>
+	<script type="text/javascript" src="js/myscript.js"></script>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+    <script type="text/javascript" src="map.js"></script>
+</head>
+
+<body>
+	<div id="page-wrapper">
+
+		<header id="header">
+			<a id="logo1" href="index.html"><img src="bread.jpg"></a>
+			<h1>Hong's Bakery House</h1>
+			<h2>Address: 898 Wildflower Dr., Shorewood, IL 60404  Phone: 331 - 545 - 6644</h2>
+			<p>Open Mon - Fri 6:45 AM - 6:30 PM; Sat 6:45 AM - 5:30 PM; Sun 9:00 AM - 2:30 PM</p>
+			<a id="toplink" href="index.html">Home</a>
+		</header>
+
+		<nav id="main-nav">
+			<ul>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="knowledge.html">Eat Healthy</a></li>
+				<li><a href="menu.html">Bread Menu</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</nav>
+
+		<div id="content-wrapper">
+			<div id="main-content">
+				<ul class="bxslider">
+				  <li><img src="images/slide1.jpg" /></li>
+ 				  <li><img src="images/slide2.jpg" /></li>
+				  <li><img src="images/slide3.jpg" /></li>
+				  <li><img src="images/slide4.jpg" /></li>
+				  <li><img src="images/slide5.jpg" /></li>
+				  <li><img src="images/slide6.jpg" /></li>
+				</ul>
+			</dir>
+
+			<h1>Hong's Bakery House, Served With A Side Of Purpose</h1>
+			
+			<p class="text"><span class="capital1">O</span>ur purpose and passion is to provide you and your family with the freshest and most flavorful baked goods you’ve ever tasted. Visit our bakery for a free slice of fresh bread or a taste of our legendary sweets. Enjoy yourself and bring your children. We’re a locally owned and community focused neighboorhood bakery.</p> 
+
+			<p>&nbsp;</p>
+
+			<h1>We Grind Our Whole Wheat Fresh Everyday!</h1>
+
+			<p class="text"><span class="capital1">B</span>ecause freshly milled whole wheat tastes phenomenal, and fresh whole grain bread is life-enhancing. We use premium wheat bought from family-owned farms located in the Golden Triangle region of Montana  -- the finest wheat growing region in the world.</p>
+
+			<br><br>
+
+			<br><hr>
+
+                <center>
+                    
+                    <table id="contact_table">
+						<tr>
+							<td>
+								<div id="message_form">
+									<form name="question" action="http://libertyville.rice.iit.edu/hzhan121/formscript.php" method="post" onSubmit="return check(question)" >
+										<center>
+										<br>
+										<h1>Send Us A Message</h1>
+										<p><label>First Name: <input type="text" name="first_name_field" id="first_name" placeholder="Enter Your First Name" ></label></p>
+										<p><label>Last Name: <input type="text" name="last_name_field" id="last_name" placeholder="Enter Your Last Name"></label></p>
+										<p>
+											<label id="sex">Gender: </label>
+											<label><input type="radio" name="gender_field" value="Male" id="gender">Male</label>
+											<label><input type="radio" name="gender_field" value="Female" id="gender">Female</label>	
+										</p>
+										<p><label>Phone Number: <input type="tel" name="phone_field" maxlength="15px" id="phone_number" placeholder="Enter Your Phone Number"></label></p>
+										<p><label>Email Address: <input type="email" name="email_field" id="email" placeholder="Enter Your Email"></label></p>
+										<p>
+											<label>You Messege<br>
+											<textarea name="comments_field" row="6" cols="42" placeholder="Contents/Questions" id="comments"></textarea>
+											</label>
+										</p>
+										<input type="submit" value="Send Me" id="send">
+										</center>
+					                </form>
+								</div>
+					        </td>
+					        <td>
+						        <div id="map-div"></div>
+					        </td>
+				        </tr>
+			        </table>
+                </center>
+			</div>
+					
+		    <br><br>
+		</dir>
+	</dir>
+    
+    <p>&nbsp;</p>
+	
+	<center><p id="updatetime"></p>
+		<script>document.getElementById("updatetime").innerHTML = Date();</script>
+    </center>
+    
+	<footer id="footer">
+		<div id="footer-wrapper">
+			<ul class="second-container">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="knowledge.html">Eat Healthy</a></li>
+				<li><a href="menu.html">Bread Menu</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</div>
+
+		<div id="footer-links">
+			<ul>
+				<li><a id="facebook" title="Facebook" href="https://www.facebook.com/"><img alt="Our Logo" src="images/facebook.png"></a></li>
+				<li><a id="Twitter" title="Twitter" href="https://twitter.com/login"><img alt="Our Logo" src="images/twitter.png"></a></li>
+			</ul>
+		</div>
+
+		<div id="footer-address">
+			<ul class="footer-content">
+				<li>Hong's Bakery House</li>
+				<li>Mailing Address</li>
+				<li>898 Wildflower Dr.</li>
+				<li>Shorewood, IL 60404</li>
+				<br>
+				<li>Phone: 331 - 545 - 6644</li>
+				<li>Email: hzhan121@hawk.iit.edu</li>
+			</ul>
+		</div>
+					
+		@Created on April 30, 2015 by Hong Zhang
+		<br>
+		<br>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,233 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Miltonian+Tattoo);
+
+
+a:link {color:brown;}
+a:visited {color:#CD3301;}
+a:hover {opacity:.5}
+a:active {color:red;}
+
+a{
+	text-decoration: none;
+}
+#toplogo{
+	display:block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+nav{
+background-color: tan;
+height:50px;
+padding:10px 10px 10px 10px;
+}
+h1
+{
+	text-align:center;
+	font-family: 'Miltonian Tattoo', 'cursive';	
+	color:#483E34;
+	font-size: 50px;
+	font-weight: bold;
+	line-height: 1em;
+	padding:10px 10px 10px 10px;
+
+	text-shadow:
+	0px 0px 0 rgb(231,231,231),
+	1px 1px 0 rgb(216,216,216),
+	2px 2px 0 rgb(202,202,202),
+	3px 3px 0 rgb(187,187,187),
+	4px 4px 0 rgb(173,173,173),
+	5px 5px 0 rgb(158,158,158), 
+	6px 6px 0 rgb(144,144,144),
+	7px 7px 6px rgba(0,0,0,0.6),
+	7px 7px 1px rgba(0,0,0,0.5),
+	0px 0px 6px rgba(0,0,0,.2);
+
+}
+h2
+{
+	text-align:center;
+	font-family: 'Miltonian Tattoo', 'cursive';	
+	color:#483E34;
+	font-size: 32px;
+	line-height: 1em;
+	padding:10px 10px 10px 10px;
+
+	text-shadow:
+	0px 0px 0 rgb(231,231,231),
+	1px 1px 0 rgb(216,216,216),
+	2px 2px 0 rgb(202,202,202),
+	3px 3px 0 rgb(187,187,187),
+	4px 4px 0 rgb(173,173,173),
+	5px 5px 0 rgb(158,158,158), 
+	6px 6px 0 rgb(144,144,144),
+	7px 7px 6px rgba(0,0,0,0.6),
+	7px 7px 1px rgba(0,0,0,0.5),
+	0px 0px 6px rgba(0,0,0,.2);
+
+}
+#atributes{
+	text-align:center;
+	color:#453B20;
+	font-family: 'Roboto', 'sans-serif';
+	font-size: 20px;
+	list-style-type: none;
+	display:block;
+	width:75%;
+	float:center;
+	
+}
+
+ul{
+text-align:center;
+}
+#tanwrap
+{
+background: tan;
+min-width:100%;
+height:50px;
+}
+#header
+{
+
+font-family: 'Miltonian Tattoo', 'cursive';	
+font-size: 18px;
+font-weight:bold;
+text-align:center;
+display:inline;
+padding:2px 15px 0px 15px;
+min-width: 100%;
+
+}
+
+li:hover
+{
+	opacity:.9
+}
+li
+{
+	font-weight:bold;
+}
+body{
+	background-image:url("FinalProjectContent/beanBackground.jpg");
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+}
+
+#bodygrad{
+	background: rgb(240,183,161); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(240,183,161,1) 12%, rgba(191,110,78,1) 86%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(12%,rgba(240,183,161,1)), color-stop(86%,rgba(191,110,78,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(240,183,161,1) 12%,rgba(191,110,78,1) 86%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(240,183,161,1) 12%,rgba(191,110,78,1) 86%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(240,183,161,1) 12%,rgba(191,110,78,1) 86%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(240,183,161,1) 12%,rgba(191,110,78,1) 86%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0b7a1', endColorstr='#bf6e4e',GradientType=0 ); /* IE6-9 */
+margin:auto;
+width:60%;
+padding:10px 20px 20px 20px;
+}
+.slider-wrapper 
+{ 
+	width: 60%; 
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#slideshow
+{
+
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 720px;
+    height: 430px;
+}
+
+p,label,input{
+	text-align:center;
+	color:#453B20;
+	font-family: 'Roboto', 'sans-serif';
+	font-size: 16px;
+
+}
+#body-text{
+
+	width:60%;
+	width:800px; 
+	margin:0 auto;
+
+}
+
+#footer{
+left:0;
+font-family: 'Roboto', 'sans-serif';
+text-align:left;
+margin: 20px 0 0 10px;
+padding: 0;
+list-style-type: none;
+margin-bottom: 0px;
+
+}
+
+.container {
+	font-family: 'Roboto', 'sans-serif';
+	margin: 0 auto;
+	height: 175px;
+	position: relative;
+	overflow: hidden;
+	background-color: tan;
+	width: 100%;
+	font-size: 12px;
+}
+#footer-info{
+
+position: absolute;
+top: 20px;
+right: 20px;
+text-align: right;
+font-weight: bold;
+color:brown;
+}
+
+#warehouse{
+	width:80%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:45px;
+}
+
+table
+{
+	margin: auto; 
+}
+
+th{
+font-family: 'Roboto', 'sans-serif';
+border:4px inset #A3481C;
+width:30%;
+}
+tr{
+	font-family: 'Roboto', 'sans-serif';
+}
+td{
+	font-family: 'Roboto', 'sans-serif';
+	border:4px inset #A3481C;
+	width:30%;
+	font-size: 12px;
+}
+
+#contactblock{
+	text-align: center;
+}
+
+#mapblock{
+			width: 500px;
+			height: 500px;
+			background-color:brown;
+			display:block;
+			margin-right: auto;
+			margin-left:auto;
+}
+

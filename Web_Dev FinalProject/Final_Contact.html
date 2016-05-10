@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta-charset="utf-8">
+		<title>Contact Us!</title>
+		<link rel="stylesheet" type="text/css" href="normalize.css">
+		<link rel="stylesheet" type="text/css" href="Final_Styles.css">
+		<style type="text/css">
+      html { height: 100% }
+      body { height: 50%; margin: 10; padding: 10 }
+      #map-canvas { height: 100% }
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(34.366667, 134.1 ),
+          zoom: 8
+        };
+        
+			
+		var map = new google.maps.Map(document.getElementById("map-canvas"),
+            mapOptions);
+      
+		 var image = 'Marker.png';
+  var myLatLng = new google.maps.LatLng(34.366667, 134.1);
+  var mapMarker = new google.maps.Marker({
+      position: myLatLng,
+      map: map,
+      icon: image
+	  });
+
+	  }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+
+
+	
+	</head>
+	
+	<body>
+		<header id="header">Do You Have Questions for Us?</header>
+				<div id ="navbar">
+					<ul>
+					<li><a href="http://libertyville.rice.iit.edu/credmon1/Final_Website/index">Home</a></li>
+					<li><a href="http://libertyville.rice.iit.edu/credmon1/Final_Website/Final_MainPage">Visit Us</a></li>
+					<li><a href="http://libertyville.rice.iit.edu/credmon1/Final_Website/Final_Contact">Contact Us</a></li>
+					</ul>
+				</div>
+		
+		<h1>Please Contact Us!</h1>
+		<ul>
+			<li>44 Chakushin Ari St. Yashima, Japan</li>
+			<li>444-444-4444</li>
+			<li>Tomoko444@Ju-on.jp</li>
+		</ul>
+		
+		<div id="map-canvas"></div>
+		
+		<form>
+			<fieldset>
+			<legend>Please enter some information about yourself</legend>
+			<p>We'd like to know more about you.</p>
+			
+			<ul>
+				<li><label>First Name <input type="text" name="first_name_field" id="form-first_name" value=""> 
+				</label></li><br>
+				 
+				 <li><label>Last Name <input type="text" name="last_name_field" id="form-last_name" value=""> 
+				</label></li><br>
+				
+				<li><label>Phone Number <input type="text" name="phone_field" id="form-phone" value=""> 
+				</label></li><br>
+				
+				<li><label>Email Address <input type="text" name="email_field" id="form-email" value=""> 
+				</label></li><br>
+				
+				<li><label>Mailing Address <input type="text" name="address_field" id="form-addess" value=""> 
+				</label></li><br>
+			</ul><br>
+			
+			<p><label>Comments<br>
+			<em>Do You Have Something More to Say? Please Let Us Know!</em><br>
+			<textarea name="message_field" rows="8" cols="48" placeholder="Text goes here"></textarea>
+			</p>
+								
+			
+			<input type="hidden" name="hidden_field" value="If you're reading this, you will die in 7 days.">
+				
+			<p><input type="submit" value="Submit"></p>
+			
+			</fieldset>
+		</form>
+		
+		</body>
+</html>

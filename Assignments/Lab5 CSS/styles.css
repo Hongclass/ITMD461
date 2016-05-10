@@ -1,0 +1,30 @@
+#course_title {
+	color: red;
+	font-family: 'Indie Flower', cursive;
+	font-weight: 1000;
+}
+
+#user {
+	color: hotpink;
+}
+
+.headline {
+	color: blue;
+	font-family: 'Indie Flower', cursive;
+	font-weight: 800;
+}
+
+.bullet_lists {
+	color: #777777;
+}
+
+body {
+	background-color: azure;
+	margin: 0 10%;
+	font-family: serif;
+	color: black;
+}
+
+
+
+

@@ -1,0 +1,14 @@
+h1 {
+	color: green;
+	font-size: 50px;
+}
+
+#second-headline {
+	color: blue;
+	font-size: 60px;
+}
+
+.first-para {
+	color:blue;
+	font-size: 24px;
+}

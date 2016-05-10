@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact Us</title> 
+    <link rel="stylesheet" href="themes/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="themes/light/light.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="themes/dark/dark.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="themes/bar/bar.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="nivo-slider.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="coffee.css" media="screen" >
+    <link rel="icon" type="image/png" href="FinalProjectContent/cup-logo.png">
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?sensor=false">
+    </script>
+     <script type="text/javascript">
+      function initialize() {
+        var mapOptions = {
+          center: new google.maps.LatLng(41.857053, -87.639257),
+          zoom: 15
+        };
+        var map = new google.maps.Map(document.getElementById("mapblock"),
+            mapOptions);
+        var marker = new google.maps.Marker({
+        map: map,
+        position: new google.maps.LatLng(41.857053, -87.639257),
+        icon: 'FinalProjectContent/littlelogo.png',
+        animation: google.maps.Animation.DROP,
+        title: 'Chicago Coffee Services'
+    });
+      }
+       
+      google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+</head>
+<body>
+<a href="index.html"><img id='toplogo'src="FinalProjectContent/logopic.jpg" /></a>
+<br>
+<nav>
+<ul>
+<li id='header'><a href="index.html">Home</a></li>
+<li id='header'><a href="about.html">About</a></li>
+<li id='header'><a href="services.html">Products and Services</a></li> 
+<li id='header'><a href="contact.html">Contact Us</a></li> 
+</ul>
+</nav>
+<br>
+
+<div id='bodygrad'>
+<img id='warehouse'src="FinalProjectContent/callme.jpg" />
+<h1>Contact Us</h1>
+<div id='body-text'>
+<p>
+Whether you are an existing customer who needs to schedule a service call, talk to your sales rep or ask
+about our latest technologies, or you and your company are looking for more information on our
+services, our customer service department will handle your inquiry and get you to the person who can
+get you the information you are looking for.
+</p>
+<p>
+You may contact us by phone or by submitting the contact form below. Your business is important to us
+and we pledge to respond to your inquiry within 24 hours.
+</p>
+
+<div id='contactblock'
+<legend><h2>Contact Form</h2></legend>
+<label for="first_name_field">First Name:</label>
+<input type="text" name="first_name_field" id="first_name_field"><br>
+<label for="last_name_field">Last Name:</label>
+<input type="text" name="last_name_field" id="last_name_field"><br>
+<label for="phone_field">Phone Number:</label>
+<input type="text" name="phone_field" id="phone_field"><br>
+<label for="email_field">Email Address:</label>
+<input type="text" name="email_field" id="email_field"><br>
+</div>
+<p>Have you ordered with us before?:</p>
+<p>
+<input type="radio" name="currentcustomer_field" value="Yes" checked>Yes</li>
+<input type="radio" name="currentcustomer_field" value="No"> No</li><br>
+</p>
+<p>Favorite Coffee related Drink:
+<select name="favrink_field">
+<option>Expresso</option>
+<option>Black Coffee</option>
+<option>Frozen Mocha</option>
+<option>Iced Coffee</option>
+</select>
+</p>
+</fieldset>
+<h2>Phone Number</h2>
+<p>
+800-555-1825<br>
+312-555-3000<br>
+</p>
+<h2>Mailing Address</h2>
+<p>
+1826 S Canal St<br>
+Chicago, IL 60616<br>
+</p>
+
+<div id="mapblock"></div>
+</div>
+</div>
+<br>
+
+<div class="container">
+<footer>
+<nav>
+<ul id="leftfooter">
+<li id='footer'><a href="http://solarsystem.nasa.gov/planets/index.cfm?CFID=9384721">Home</a></li>
+<li id='footer'><a href="about.html">About</a></li>
+<li id='footer'> <a href="services.html">Products and Services</a></li> 
+<li id='footer'><a href="contact.html">Contact Us</a></li> 
+</ul>
+
+</nav>
+        <div id="footer-info">
+          Mailing Address <br>
+          1826 S Canal St<br>
+          Chicago, IL 60616<br>
+          Phone Number<br>
+          800-555-1825<br>
+          312-555-3000<br>
+          <a href="https://twitter.com/"><img src="FinalProjectContent/twitter.png" alt="twitter"></a>
+          <a href="https://www.facebook.com/"><img src="FinalProjectContent/facebook.png" alt="facebook"></a> <br>
+        </div>
+</footer>
+</div>
+</body>
+</html>

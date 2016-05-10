@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	/* This is embedded css */
+		p,
+		div {
+			color: red;
+			/*Grouped selector*/
+			/*font-size: 16px;*/
+		}
+		#outer-container {
+			font-size: 20px;
+		}
+		div p {
+			color: blue;
+		}
+		div #inner-container h3 {
+			color: blue;
+			/*Descendant selector*/
+		}
+		#outer-container > p {
+			color: purple;
+			/*Direct Child selector*/
+		}
+		div.yellowtext.jumbotext#inner-container p {
+			color: yellow;
+		}
+		div#outer-container p {
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+<!--  This is a comment -->
+	<div id="outer-container" class="yellowtext">
+		<p>A Sentance</p>
+		<p>A Sentance</p>
+		<p class="yellowtext">A Sentance</p>
+		<p>A Sentance</p>
+		<p>A Sentance</p>
+		<h3></h3>
+		<div id="inner-container" class="yellowtext jumbotext">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam aperiam, nihil ex eum. Saepe error, minus, cum tempore hic nemo soluta maxime, ratione molestiae expedita, beatae temporibus sint aperiam sed.</p>
+			<h3></h3>
+		</div>
+	</div>
+</body>
+</html>

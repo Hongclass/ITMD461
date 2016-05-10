@@ -1,0 +1,156 @@
+#home_head
+{
+	font-family: 'Miltonian Tattoo', cursive;
+	font-size: 50px;
+	text-align: center;
+	color: #FFFFFF;
+}
+body
+{
+	font-family: 'Miltonian Tattoo', cursive;
+	font-size: 14px;
+	background-image: url(solarsystem.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+#line
+{
+	color: #000000;
+	opacity:0.3;
+}
+#home_table
+{
+	opacity:0.7;
+	text-align: center;
+}
+#home_table table
+{
+	border-collapse: collapse;
+	color: #FFFFFF;
+	margin: auto;
+	background-color: #000000;
+}
+#home_table th, td
+{
+	border: 1px #B6B6B6 solid; 
+}
+.content td
+{
+	border: 0px #000000 solid;
+	background-color: #000000;
+	border-collapse: collapse;
+	color: #FFFFFF;
+}
+.content 
+{
+	width: 1130px;
+	opacity:0.7;
+}
+.content table
+{
+	border: 2px #B6B6B6 solid !important;
+}
+.content p
+{
+	text-align: left;
+}
+#word
+{
+	font-family: 'Indie Flower', cursive;
+	font-size: 18px;
+	color: #FFFFFF;
+	text-align: center;
+}
+.planet img
+{
+	width: 570px;
+	height: 296px;
+}
+.data
+{
+	height: 30px;
+}
+#mass
+{
+	width: 100px;
+}
+#diameter
+{
+	width: 90px;
+}
+#density
+{
+	width: 90px;
+}
+#escape
+{
+	width: 90px;
+}
+#distance
+{
+	width: 250px;
+}
+#rotation
+{
+	width: 220px;
+}
+#revolution
+{
+	width: 200px;
+}
+#Mercury:hover
+{
+	background-color: #337E81;
+	color: #FF0000;
+	font-weight: 900;
+}
+#Venus:hover
+{
+	background-color: #F8F119;
+	color: #000000;
+	font-weight: 900;
+}
+#Earth:hover
+{
+	background-color: #182EF4;
+	color: #FAE62A;
+	font-weight: 900;
+}
+#Mars:hover
+{
+	background-color: #B01717;
+	color: #FFFFFF;
+	font-weight: 900;
+}
+#Jupiter:hover
+{
+	background-color: #EEAC33;
+	color: #690808;
+	font-weight: 900;
+}
+#Saturn:hover
+{
+	background-color: #884B0A;
+	color: #54FC21;
+	font-weight: 900;
+}
+#Uranus:hover
+{
+	background-color: #071B13;
+	color: #FFFFFF;
+	font-weight: 900;
+}
+#Neptune:hover
+{
+	background-color: #02061B;
+	color: #FFFFFF;
+	font-weight: 900;
+}
+#link a, p
+{
+	text-align: center;
+	font-size: 15px;
+	font-weight: 900;
+	color: #FFFFFF;
+}
+

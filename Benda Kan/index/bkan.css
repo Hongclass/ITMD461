@@ -1,0 +1,60 @@
+ul.second-nav li{
+	position: relative;
+	width: 200px;
+	height: 80px;
+	float:left;
+	color: #D5D2CE;
+	font-size: 18px;
+	font-family:'Miltonian Tattoo', cursive;
+	margin-top: 10px;
+	margin-right: 10px;
+	text-align: center;
+}
+
+ul.second-nav li a{
+	color: #FFFFFF;
+}
+
+ul.second-nav li:hover{
+	color: #AD8148;
+}
+
+#content h1{
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+}
+
+table{
+	margin-top: 50px;
+	font-family: 'Roboto', sans-serif;
+	border-collapse: collapse;
+	border:solid #000000 2px;
+	width: 60%;
+	height:200px;
+	text-align: center;
+}
+
+table tr th{
+	border-collapse: collapse;
+	border:solid #000000 2px;
+	padding:5px;
+}
+
+table tr td{
+	border-collapse: collapse;
+	border:solid #000000 2px;
+	padding:5px;
+}
+
+table tr td a{
+	color: #000000;
+}
+
+table tr:hover{
+	color: #AD8148;
+	background-color: #242323;
+}
+
+table tr td a:hover{
+	color: #AD8148;
+}

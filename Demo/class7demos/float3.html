@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+		#mycontainer {
+			background-color: green;
+			overflow: hidden;
+		}
+		#mycontainer div {
+			background-color: blue;
+			width: 300px;
+			height: 200px;
+			margin: 10px;
+			float: left;
+		}
+
+		#mycontainer h2 {
+			clear:both;
+		}
+		.of {
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	<div id="mycontainer">
+		<div class="of">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis veritatis omnis quaerat repellendus explicabo ipsa, voluptatum provident esse mollitia, dolorum vero dicta non! Libero maiores ab, assumenda, sed aspernatur odit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis veritatis omnis quaerat repellendus explicabo ipsa, voluptatum provident esse mollitia, dolorum vero dicta non! Libero maiores ab, assumenda, sed aspernatur odit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis veritatis omnis quaerat repellendus explicabo ipsa, voluptatum provident esse mollitia, dolorum vero dicta non! Libero maiores ab, assumenda, sed aspernatur odit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis veritatis omnis quaerat repellendus explicabo ipsa, voluptatum provident esse mollitia, dolorum vero dicta non! Libero maiores ab, assumenda, sed aspernatur odit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis veritatis omnis quaerat repellendus explicabo ipsa, voluptatum provident esse mollitia, dolorum vero dicta non! Libero maiores ab, assumenda, sed aspernatur odit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis veritatis omnis quaerat repellendus explicabo ipsa, voluptatum provident esse mollitia, dolorum vero dicta non! Libero maiores ab, assumenda, sed aspernatur odit!</div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</body>
+</html>

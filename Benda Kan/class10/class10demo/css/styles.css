@@ -1,0 +1,84 @@
+#page-wrapper {
+	width: 960px;
+	margin: 0 auto;
+}
+
+header {
+	background: #398235; /* Old browsers */
+background: -moz-linear-gradient(top,  #398235 0%, #8ab66b 56%, #c9de96 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#398235), color-stop(56%,#8ab66b), color-stop(100%,#c9de96)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #398235 0%,#8ab66b 56%,#c9de96 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #398235 0%,#8ab66b 56%,#c9de96 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #398235 0%,#8ab66b 56%,#c9de96 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #398235 0%,#8ab66b 56%,#c9de96 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#398235', endColorstr='#c9de96',GradientType=0 ); /* IE6-9 */
+}
+
+#header-container {
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+
+#header-container h1 {
+	position: absolute;
+	top: 30px;
+	left: 220px;
+	margin: 0;
+	font-family: 'Rock Salt', cursive;
+}
+
+img.logo {
+	margin-left: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+div.logo {
+	width: 76px;
+	height: 120px;
+	background-image: url('../images/logo.png');
+	position: absolute;
+	top: 20px;
+	left: 125px;
+}
+
+ul.secondary-nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+ul.secondary-nav li:before {
+	content: "|";
+}
+
+ul.secondary-nav li:first-child:before {
+	content: "";
+}
+
+ul.secondary-nav li {
+	float: left;
+}
+
+ul.secondary-nav li a {
+	margin: 0 10px;
+}
+
+nav {
+	background-color: red;
+}
+
+#main-content {
+	background-color: blue;
+	min-height: 400px;
+}
+
+footer {
+	background-color: purple;
+	height: 150px;
+}
